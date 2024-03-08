@@ -12,9 +12,9 @@ namespace P3
                 Console.WriteLine("Ingrese el sueldo del empleado: " + i);
                 int sueldo = int.Parse(Console.ReadLine());
 
-                int descuentoRenta = (int)(sueldo * 0.10);
-                int descuentoAFP = (int)(sueldo * 0.05);
-                int descunetoSeguroSocial = (int)(sueldo * 0.04);
+                double descuentoRenta = sueldo * 0.10;
+                double descuentoAFP = sueldo * 0.05;
+                double descunetoSeguroSocial = sueldo * 0.04;
 
                 int totNet = sueldo - descuentoRenta - descuentoAFP - descunetoSeguroSocial;
 
